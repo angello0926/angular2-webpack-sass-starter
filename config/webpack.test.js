@@ -6,6 +6,13 @@ module.exports = {
     },
 
     module: {
+        preLoaders: [
+            {
+                test: /\.ts$/,
+                loader: "tslint"
+            }
+        ],
+
         loaders: [
             {
                 test: /\.ts$/,
